@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function windowop() {
+            var win = window.open("New Window", "", "width = 200px, height = 200px");
+            win.document.write("<html>");
+            win.document.write("<head>");
+            win.document.write("<title>");
+            win.document.write("new window");
+            win.document.write("</title>");
+            win.document.write("</head>");
+            win.document.write("<body>");
+            win.document.write("<h3><p>hello</p></h3>");
+            win.document.write("</body>");
+            win.document.write("</html>");
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" onclick="windowop()" value="click here">
+</body>
+
+</html>

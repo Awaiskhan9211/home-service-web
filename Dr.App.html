@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://doctor-appoinment-app.netlify.app/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="https://doctor-appoinment-app.netlify.app/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="https://doctor-appoinment-app.netlify.app/logo192.png">
+    <link rel="manifest" href="https://doctor-appoinment-app.netlify.app/manifest.json">
+    <link rel="stylesheet" href="./Dr.App_files/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="./Dr.App_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Dr.App_files/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Dr.App</title>
+    <link href="./Dr.App_files/main.efcd1d9d.chunk.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color fixed-top"><a class="navbar-brand"
+                    href="https://doctor-appoinment-app.netlify.app/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAAeCAYAAAD5AOomAAAFdElEQVRoge2bv24bRxDGfxIcGClpw5W6uUeQ+7AQi9SyaDgOXBki7BegHkF6gQSSghQKBEOm2QcgC6W3HuGmMqvAYhsjgZRiZ+nlce94J5IiE/ADDhL35mZW++382Tlq47sPn7gDmsDP9vuby92t93dRssbisHmHZ14C74BHdr2rdwcv5zqrNWZGVWJfAmeZ5zaBszW5q4UqxMZIDfWsyV0hlCW2ST6poa6zenfQnHlWa8yMByXlfqLcJtg02XsrpjY2Nu7L1FwhIgIMVXU4i57b29voeFmPvalgq4rsnZAkyXaSJNdJkqQichiTEZEdEbm2a2fRc6oCEUmBFLgWkdoibJQl9i3lCLsx2UVDgJr9lByZWuZaJeTNeW4oS+wH4BXF5N4Ary53tz7MPKv/Pzr282rWUJyHWI5t4vKk9z5P1DnwLXCao6t1ubt17j/Uu4NnfM3Nb1exiSEi23z1nn7RIls4r8VkLZzWAFRVS+htAQfAhD3TtW36hhSQLyK1JEm8rKZpeuXvZT3WNx8eA0+ACxvz+BX4J2Ljy+Xu1i/+gx17LkzHY1asiSEi+yJyC3zEFXrvcfluYvMFsr2MbC8QO8blzNTyZ1ZvO6N2lGMztto25m317PmJOsLsh7Ifre4QGCc2t/kAvLbPPxD38of17uDHenewWe8OXufpWQVyRWQPR0QMeyLyMZDdLpDdCWVDE5GxQ7ObRej1bSBaCALtkFzbPLGCsAakSZLU/OJPaz6cAn8Bv+UYxu59Mdn7bGLsBdXv6CJy5LIwF473cW3RVjC2HZAQetqRqm4AjYxsrDBrAAmgwVjeBvHzCkk9sXkdBWNtk20zvnkawNOMrf1NyjUfAB5OuQ/Tz8WLamJkK+C8Kng7+F1VtaGqQ1U9YZzcmHf5h/q4/NgBOrH8qap9VVXcgo/mWHC0Cb3vSlVbNq8DYJQ37flwbo00TfuWW0Nbe5u4tzRVe8anwPd25RVTefA254l+5NKIXLiwR5l7neB3v9D9YKwtIrcWBsERGNugI6KN9H5Epggnmc/eIxPTF3prz/LqNS5ne0jZzpPHDe7YM6p+L3e3fq93B39QzusXgU5sga2K7UXkS0NVT6xDFIZkwYXNQxFpmbfPE2MRwMi8ypGFeHSqPQDe4CrhaaRMkOpxubt1Xu8OoBy5N2Zz0ZjWlCi6H3rdgYgc4ULgHuNh81hEOtmHZ8TYvMLwHQn7J0xGpiG4nPge+IZiUnJJ9ShJrm9iLOtMGy5Mm0hxYriCUfUpuHycYGHSirO8jTEaN1KqtjPbjIfjHlYbiMgj+xu8jas0TUeydtTZSdP0xIdiT1iMlBipvvlAvTt467tNU8j1pOZujkVDVfsi4hemZsQ1cZ4YEuu90C+giMgxbiMIxd5+7KI3yngFrnmNBlXt2DPeVg9H7h5BwaeqQxE5CPQeW4PCy7bBERwu/jmTbcMYqWHz4QlwER5hjLionmWSGiDMx4JrJoyRqqqe2INgfB9XoIR5O4+sY5MLN8C0k0B4fwdHXlgBt8xgh/Gcux/5G4ZZrzoHXgCfgT+B50ySOrX5YAQ+Nx2fgRdzJvXO/VU7rjzN0XEUFmJWGDVzZDuMHzGK0FDVkIwJfUZYI3JvCDTDIk1VnzJZ1Y9k0zQ92qjwZbaiJgYsyStneR8rQfyzc2eRbHg+HnuPaq1I710NC/lSRu8c5uVTg6ZpOppTWWKf4cJvmYr3+X2+4VmFF+0ZYptBKF84Zn3RXvUbFGssGWWJrdJ4WEaTYtlYyDvVWfBf/QbFSkFVW9j3rO8zDBehbEuxdBPjvpsPeTlmCVgpr60SNmPnU49VOqeuQfV8uOrNhzUMVd/ugCP3b9b/lLXS+BclUkpjnGyD3QAAAABJRU5ErkJggg=="
+                        alt="logo"></a><button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                        <li class="nav-item"><a class="nav-link pl-4" activeclassname="selected"
+                                href="https://doctor-appoinment-app.netlify.app/#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link pl-4"
+                                href="https://doctor-appoinment-app.netlify.app/#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link pl-4"
+                                href="https://doctor-appoinment-app.netlify.app/#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link pl-4"
+                                href="https://doctor-appoinment-app.netlify.app/#appointment">Make Appointment</a></li>
+                        <li class="nav-item"><a class="nav-link pl-4"
+                                href="https://doctor-appoinment-app.netlify.app/#contact">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="banner-section mb-5" id="home">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <h1 class="banner-title">We Care for Your Health Every Moment</h1>
+                        <h3 class="text-center py-2">The best of modern healthcare to ensure you stay healthy, always.
+                        </h3>
+                        <div class="text-center"><a class="btn mainbtn"
+                                href="https://doctor-appoinment-app.netlify.app/#appointment">Make Appointment</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about pt-2 pb-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="about-text">
+                            <h2>A Few Words About Me</h2>
+                            <p class="text-secondary pt-4">My name is Dr. Rukmaji Prakash, I am a Neurosurgeon and has
+                                an experience of 10 years in this field. I Had completed MBBS from Maharashtra
+                                University of Health Sciences, Nashik in 2009, MS - General Surgery from Dr. B.R.
+                                Ambedkar Open University, Hyderabad in 2013 and MCh - Neuro Surgery from Sri
+                                Venkateshwara Institute of Medical Sciences in 2019.<br>Some of the services provided by
+                                the me are: Trigeminal Neuralgia, Brain &amp; Spine Tumors, Cervical &amp; Lumbar Disc
+                                Surgeries, Head Injury and Epilepsy surgery etc.</p><a
+                                href="https://doctor-appoinment-app.netlify.app/#contact"
+                                class="btn mainbtn mt-4">Contact Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  offset-lg-1 col-md-12"><img src="./Dr.App_files/about-me.5cfe4e3f.jpg"
+                            class="img-fluid" alt="about-img"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services bg-light py-5" id="services">
+            <div class="container">
+                <div class="section-header text-center pb-4">
+                    <h2 class="head-title">My Offered Services</h2>
+                    <p>We Make HealthCare Better Together</p>
+                </div>
+                <div class="client-data py-2">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="services-item" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="icon1 text-center"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-center">Health Checkup</h3>
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse a erat sit amet augue aliquet rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="services-item" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="icon1 text-center"><i class="fa fa-heartbeat" aria-hidden="true"></i></div>
+                                <h3 class="text-center">Blood Pressure Monitor</h3>
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse a erat sit amet augue aliquet rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="services-item" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="icon1 text-center"><i class="fa fa-medkit" aria-hidden="true"></i></div>
+                                <h3 class="text-center">Cupping therapy</h3>
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse a erat sit amet augue aliquet rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us py-5" id="contact">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-4">
+                        <div class="contact-text text-center">
+                            <h4>Emergency hotline</h4>
+                            <h1>+91 25 567 550</h1>
+                            <p>We provide 24/7 customer support. Please feel free to contact us for emergency case.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Appointment-section py-5" id="appointment">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h2 class="text-uppercase lined">Make Appointment</h2>
+                </header>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form class="contact-form" id="validateform" novalidate="novalidate">
+                            <div class="row">
+                                <div class="form-group col-lg-12"><label for="name">patient Name *</label><input
+                                        id="name" type="text" name="name" placeholder="Enter your firstname"
+                                        class="form-control" required=""></div>
+                                <div class="form-group col-lg-6"><label for="mobile">patient phone *</label><input
+                                        id="mobile" type="number" name="mobile" placeholder="Enter your phone no"
+                                        class="form-control" required=""></div>
+                                <div class="form-group col-lg-6"><label for="dob">Date of Birth *</label><input id="dob"
+                                        type="date" name="dob" class="form-control" required=""></div>
+                                <div class="form-group col-lg-6"><label for="appointmentdate">Appointment Date
+                                        *</label><input id="appointmentdate" type="date" name="appointmentdate"
+                                        class="form-control" required=""></div>
+                                <div class="form-group col-lg-6"><label for="disease">Disease Type *</label><select
+                                        class="form-control" name="disease" id="disease">
+                                        <option>Select your Disease</option>
+                                        <option>Viral Fever</option>
+                                        <option>Cold</option>
+                                        <option>Maleria</option>
+                                        <option>Dengu</option>
+                                        <option>Other</option>
+                                    </select></div>
+                                <div class="form-group col-lg-12"><label for="message">patient message for us
+                                        *</label><textarea id="message" name="message" placeholder="Enter your message"
+                                        rows="4" class="form-control"></textarea></div>
+                                <div class="form-group col-lg-12"><button type="submit" name="submit"
+                                        class="btn btn-outline-primary w-100">Send Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="icon mb-3"><i class="fas fa-map-marker-alt"></i> Our Office</div>
+                        <p>56/8, Santa bullevard, Rocky beach, San fransisco, Los angeles, USA Maharashtra</p>
+                        <div class="icon mb-3"><i class="far fa-clock"></i> Servicing Hours</div>
+                        <p>Mon-Sat: 10am – 6pm</p>
+                        <div class="icon mb-3"><i class="fa fa-phone"></i> Get in Touch</div>
+                        <p>+91 8267250401</p>
+                        <p>+91 9926898850</p>
+                        <div class="icon mb-3"><i class="fa fa-envelope"></i> Mail Us At</div>
+                        <p> dr.rukmaji@gmail.com</p>
+                        <ul class="mb-0 list-inline social text-left">
+                            <li class="list-inline-item"><a href="https://wa.me/918097603225" target="_blank"
+                                    rel="noopener noreferrer" class="social-link social-link-whatsapp"><i
+                                        class="fab fa-whatsapp"></i></a></li>
+                            <li class="list-inline-item"><a href="https://doctor-appoinment-app.netlify.app/#"
+                                    class="social-link social-link-facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="https://doctor-appoinment-app.netlify.app/#"
+                                    class="social-link social-link-instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://doctor-appoinment-app.netlify.app/#"
+                                    class="social-link social-link-email"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section class="footer-area py-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="w-100"></div>
+                        <div class="col-md-12 pt-4">
+                            <p class="text-muted">© 2024 - All Rights Reserved - WebTech<br><small><a
+                                        href="https://my-portfolio-f.herokuapp.com/" class="text-muted" target="_blank"
+                                        rel="noopener noreferrer">Website Designed by Er.fauzan</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="./Dr.App_files/jquery-3.5.1.slim.min.js.download"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./Dr.App_files/popper.min.js.download"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="./Dr.App_files/bootstrap.min.js.download"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./Dr.App_files/jquery.validate.min.js.download"></script>
+    <script src="./Dr.App_files/additional-methods.min.js.download"></script>
+    <script
+        type="text/javascript">$(document).ready((function () { $("#validateform").validate({ rules: { name: { required: !0, minlength: 2 }, mobile: { required: !0, digits: !0, minlength: 10, maxlength: 10 } }, messages: { name: { required: "This field is required", minlength: "Please enter atleast two character" }, mobile: { required: "This field is required", digits: "Please enter a valid mobile number", minlength: "Please enter 10 digits only", maxlength: "Please enter 10 digits only" } } }) }))</script>
+    <script>!function (e) { function r(r) { for (var n, p, l = r[0], a = r[1], f = r[2], c = 0, s = []; c < l.length; c++)p = l[c], Object.prototype.hasOwnProperty.call(o, p) && o[p] && s.push(o[p][0]), o[p] = 0; for (n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]); for (i && i(r); s.length;)s.shift()(); return u.push.apply(u, f || []), t() } function t() { for (var e, r = 0; r < u.length; r++) { for (var t = u[r], n = !0, l = 1; l < t.length; l++) { var a = t[l]; 0 !== o[a] && (n = !1) } n && (u.splice(r--, 1), e = p(p.s = t[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function p(r) { if (n[r]) return n[r].exports; var t = n[r] = { i: r, l: !1, exports: {} }; return e[r].call(t.exports, t, t.exports, p), t.l = !0, t.exports } p.m = e, p.c = n, p.d = function (e, r, t) { p.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, p.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, p.t = function (e, r) { if (1 & r && (e = p(e)), 8 & r) return e; if (4 & r && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (p.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & r && "string" != typeof e) for (var n in e) p.d(t, n, function (r) { return e[r] }.bind(null, n)); return t }, p.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return p.d(r, "a", r), r }, p.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, p.p = "/"; var l = this["webpackJsonpdoctor-app"] = this["webpackJsonpdoctor-app"] || [], a = l.push.bind(l); l.push = r, l = l.slice(); for (var f = 0; f < l.length; f++)r(l[f]); var i = a; t() }([])</script>
+    <script src="./Dr.App_files/2.31d2c8f7.chunk.js.download"></script>
+    <script src="./Dr.App_files/main.703d1190.chunk.js.download"></script>
+</body>
+
+</html>

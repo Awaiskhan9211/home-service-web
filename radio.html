@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Radio Button UI with Background Color</title>
+    <style>
+        body {
+            transition: background-color 0.1s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Choose Your Color</h1>
+
+    <label>
+        <input type="radio" name="color" id="red" value="red"> Red
+    </label>
+
+    <label>
+        <input type="radio" name="color" id="blue" value="blue"> Blue
+    </label>
+
+    <br><br>
+
+    <button onclick="selectRed()">Select Red</button>
+    <button onclick="selectBlue()">Select Blue</button>
+    <button onclick="uncheckAll()">Uncheck All</button>
+
+    <script>
+        function selectRed() {
+            document.getElementById('red').checked = true;
+            document.body.style.backgroundColor = "red";
+        }
+
+        function selectBlue() {
+            document.getElementById('blue').checked = true;
+            document.body.style.backgroundColor = 'blue';
+        }
+
+        function uncheckAll() {
+            const radios = document.getElementsByName('color');
+            radios.forEach(radio => radio.checked = false);
+            document.body.style.backgroundColor = ''; // Resets to the default background color
+        }
+    </script>
+</body>
+
+</html>

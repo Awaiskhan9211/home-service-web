@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title> Awais khan 220424</title>
+    <script>
+        class Fibo {
+            constructor(n) {
+                this.n = n;
+            }
+            calculateFibonacci() {
+                let n1 = 0, n2 = 1, n3;
+                document.write("Fibonacci Series:<br>");
+                if (this.n >= 1) document.write(n1 + "<br>");
+                if (this.n >= 2) document.write(n2 + "<br>");
+
+                for (let i = 2; i < this.n; i++) {
+                    n3 = n1 + n2;
+                    document.write(n3 + "<br>");
+                    n1 = n2;
+                    n2 = n3;
+                }
+            }
+        }
+        const num = parseInt(prompt("Enter the number of terms: "), 10);
+        const f = new Fibo(num);
+        f.calculateFibonacci(); 
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

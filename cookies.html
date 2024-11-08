@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createcookies() {
+            var c = username.value;
+            var cookie = document.cookie = "username= " + c;
+            alert("Cookies created successfully!");
+            var cookiearr = cookie.split(";");
+            for (var i = 0; i < cookiearr.length; i++) {
+                var arr2 = cookie.split("=");
+                var user = arr2[0];
+                var uvalue = arr2[1];
+                document.write(user + "=" + uvalue);
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="username">
+    <input type="button" onclick="createcookies()" value="onclick">
+
+</body>
+
+</html>

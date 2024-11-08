@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array</title>
+    <script>
+        var i;
+
+        var a = new Array(9, 16, 8, 6, 3);
+        a.push(4);
+        for (i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+        a.pop();
+
+        a.unshift(5);
+        for (i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+        a.shift();
+        for (i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        a.sort(function (a, b) { return a - b });
+        for (i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        var r = a.join("/");
+        document.write("After joining=" + r);
+        document.write("<br>");
+        document.write("<br>");
+
+        var arr = new Array(9, 16, 8, 6, 3);
+
+        var e = arr.concat(arr);
+        document.write("After concat=" + e);
+        document.write("<br>");
+        document.write("<br>");
+
+        a.reverse();
+        for (i = 0; i < a.length; i++) {
+            document.write(a[i] + " ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        var ar = { "one": 1, "two": 2, "three": 3, "four": 4 };
+        document.write(ar.one + ",");
+        document.write(ar.two + ",");
+        document.write(ar.three + ",");
+        document.write(ar.four
+
+        );
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

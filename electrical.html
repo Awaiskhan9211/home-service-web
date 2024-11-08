@@ -1,0 +1,161 @@
+<style>
+    /* Resetting some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f4f4f9;
+        line-height: 1.6;
+
+        background: url('electrical-services.jpg') no-repeat center center;
+        background-size: cover;
+        color: #fff;
+        /* Ensure text is readable over the background */
+
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        display: inline;
+        font-size: 24px;
+    }
+
+    header nav a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Service Detail Section */
+    .service-detail {
+        max-width: 800px;
+        margin: 80px auto;
+        padding: 40px;
+        background-color: #ffffffb8;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+    }
+
+    .service-detail h2 {
+        color: #4CAF50;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .service-detail p {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .service-detail strong {
+        font-weight: bold;
+        color: #333;
+    }
+
+
+    #book_now_btn {
+        width: 150px;
+        height: 50px;
+        translate: 670px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #4caf4f6f;
+    }
+
+    #book_now_btn a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 30px;
+        background-color: #333;
+        color: #fff;
+        margin-top: 120px;
+    }
+
+    footer p {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .service-detail {
+            padding: 15px;
+        }
+
+        header nav a {
+            margin: 0 5px;
+            font-size: 14px;
+        }
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Screenshot_6-11-2024_164315_turbologo.com-transformed.jpeg" alt="Home Services Logo" />
+            <h1>Home Services</h1>
+        </div>
+        <nav>
+            <a href="micro.html">Home</a>
+            <a href="micro.html#services">Services</a>
+            <a href="micro.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="service-detail">
+        <h2>Electrical Services</h2>
+        <p>We offer 24/7 expert electrical services for all your repair needs, including wiring repairs, installation,
+            and
+            maintenance.</p>
+        <p><strong>Starting Price:</strong> $60/hour</p>
+        <p><strong>Customer Reviews:</strong> "Efficient and reliable service!" - John D.</p>
+    </section>
+    <button id="book_now_btn"><a href="micro.html#booking">Book Now</a></button>
+    <footer>
+        <p>&copy; 2024 Home Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+/* Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    /* overflow-y: hidden; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*Navigation Bar*/
+header {
+    background-color: #333;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.about-card-text {
+    color: #707070 !important;
+    font-size: 18px !important;
+}
+
+header h1 {
+    color: #fff;
+    display: inline;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    background: url('homeservice.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.slider-container {
+    max-width: 940px;
+    /* Width to fit 3 cards plus margin */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-card {
+    width: 300px;
+    /* Fixed width */
+    margin: 0 10px;
+    /* Small margin for spacing */
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
+    color: #000;
+}
+
+/* Ensures images fit within the card without overflowing */
+.service-card img {
+    width: 100%;
+    height: 60%;
+    /* Adjust the image height to fit well within the card */
+    object-fit: cover;
+    /* Ensures image scales to fit within defined height */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Slider Navigation Buttons */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #333;
+}
+
+/* Booking Form */
+.booking-form {
+    padding: 40px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #e9f7f2;
+    text-align: center;
+}
+
+.testimonial-card {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 20px 20px;
+    background-color: #fafafa;
+    text-align: left;
+    max-width: 900px;
+    margin: 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3f3f3f;
+    border-bottom: 1px solid #ddd;
+    height: 80px;
+    /* Increased height */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    /* Adjusted logo size to fit navbar */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Adjustments for Responsive View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.3em;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
+
+h3 {
+    color: #000;
+}
